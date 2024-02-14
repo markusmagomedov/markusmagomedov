@@ -1,1 +1,1 @@
-küberpõgenemistuba
+[küberpõgenemistuba]()
