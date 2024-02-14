@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTF Challenge Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CTF Challenge Hub</h1>
+    <!-- Timer Display -->
+    <div id="timer">Timer: 00:00:00</div>
+    <!-- Main Hub Start Button -->
+    <button id="mainStartButton" onclick="startMainTimer()">Start Challenges</button>
+    <div id="rooms" class="rooms">
+        <div class="room-box" data-room-id="room1" onclick="openRoomDetail('room1')">Room 1: Vaimse Tervise Võrgustik</div>
+        <div class="room-box" data-room-id="room2" onclick="openRoomDetail('room2')">Room 2: Küberturvalisuse Kood</div>        
+        <div class="room-box" data-room-id="room3" onclick="openRoomDetail('room3')">Room 3: Tehisintellekti Tulevik</div>        
+        <div class="room-box" data-room-id="room4" onclick="openRoomDetail('room4')">Room 4: Siberi Saladused</div>        
+        <div class="room-box" data-room-id="room5" onclick="openRoomDetail('room5')">Room 5: Digitaalne Detektiiv</div>        
+        <!-- Add more room boxes as needed -->
+    </div>
+
+    <!-- Room Detail View (Initially Hidden) -->
+    <div id="roomDetail" class="room-detail hidden">
+        <!-- Details populated by JavaScript -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
